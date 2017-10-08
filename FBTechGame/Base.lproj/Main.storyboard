@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GdL-p3-0fF">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Games-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FBTechGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgI-bf-qVb">
+                                <rect key="frame" x="16" y="340" width="117" height="30"/>
+                                <color key="backgroundColor" red="0.21719980239868164" green="0.24939930438995361" blue="0.33231359720230103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="Q3Q-DQ-Hqo"/>
+                                    <constraint firstAttribute="height" constant="30" id="ggi-hd-1qt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.74094384908676147" green="0.79695910215377808" blue="0.078373409807682037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bgm-6a-u2M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tk0-Ik-nFz">
+                                <rect key="frame" x="187" y="340" width="117" height="30"/>
+                                <color key="backgroundColor" red="0.21719980239868164" green="0.24939930438995361" blue="0.33231359720230103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="19"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="0.74094384908676147" green="0.79695910215377808" blue="0.078373409807682037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qiL-NJ-i5s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAe-fa-qQl">
+                                <rect key="frame" x="76" y="403" width="168" height="39"/>
+                                <color key="backgroundColor" red="0.21719980239868164" green="0.24939930438995361" blue="0.33231359720230103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
+                                <state key="normal" title="Score Board">
+                                    <color key="titleColor" red="0.74094384908676147" green="0.79695910215377808" blue="0.078373409807682037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="T0W-hH-MDg" kind="show" id="6vq-fv-c8j"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count Down Start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5R5-TD-rOG">
+                                <rect key="frame" x="0.0" y="155" width="320" height="53"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="6nw-Pb-g8x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="25"/>
+                                <color key="textColor" red="0.74094384908676147" green="0.79695910215377808" blue="0.078373409807682037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zAe-fa-qQl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="7pL-Sf-QJR"/>
+                            <constraint firstItem="zAe-fa-qQl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="83a-nm-MBQ"/>
+                            <constraint firstItem="tk0-Ik-nFz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8eZ-Wk-IMV"/>
+                            <constraint firstAttribute="trailing" secondItem="5R5-TD-rOG" secondAttribute="trailing" id="EXX-cc-RXM"/>
+                            <constraint firstItem="mgI-bf-qVb" firstAttribute="top" secondItem="tk0-Ik-nFz" secondAttribute="top" id="GJw-tr-xpj"/>
+                            <constraint firstItem="5R5-TD-rOG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ggs-M7-w6w"/>
+                            <constraint firstItem="mgI-bf-qVb" firstAttribute="bottom" secondItem="tk0-Ik-nFz" secondAttribute="bottom" id="M8o-zA-EzG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zAe-fa-qQl" secondAttribute="bottom" constant="38" id="MC8-ba-4hw"/>
+                            <constraint firstItem="mgI-bf-qVb" firstAttribute="width" secondItem="tk0-Ik-nFz" secondAttribute="width" id="ON3-u3-waV"/>
+                            <constraint firstItem="zAe-fa-qQl" firstAttribute="top" secondItem="mgI-bf-qVb" secondAttribute="bottom" constant="33" id="VZm-Ll-OoJ"/>
+                            <constraint firstItem="5R5-TD-rOG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="91" id="YlL-IZ-a3Z"/>
+                            <constraint firstItem="tk0-Ik-nFz" firstAttribute="leading" secondItem="mgI-bf-qVb" secondAttribute="trailing" constant="54" id="byH-ez-gP4"/>
+                            <constraint firstItem="mgI-bf-qVb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ixM-JD-gT2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Games" id="mOW-bJ-A6a"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="5R5-TD-rOG" id="DCQ-uN-IKj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="594.375" y="70"/>
+        </scene>
+        <!--Score View Controller-->
+        <scene sceneID="UVO-Av-cZM">
+            <objects>
+                <viewController storyboardIdentifier="ScoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T0W-hH-MDg" customClass="ScoreViewController" customModule="FBTechGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ITu-2U-Egb"/>
+                        <viewControllerLayoutGuide type="bottom" id="cdO-aY-Mul"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y10-zA-PhV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="63" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7xG-n7-HWa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="544"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameCell" rowHeight="50" id="dnR-WK-PaI" customClass="GameCell" customModule="FBTechGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dnR-WK-PaI" id="cuV-Qy-ZTr">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfx-xf-Yxd">
+                                                    <rect key="frame" x="0.0" y="16.5" width="312" height="27"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="27" id="mBD-gN-uGu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
+                                                    <color key="textColor" red="0.74094384908676147" green="0.79695910215377808" blue="0.078373409807682037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="nfx-xf-Yxd" secondAttribute="bottom" constant="19.5" id="8UW-H2-7qS"/>
+                                                <constraint firstAttribute="trailing" secondItem="nfx-xf-Yxd" secondAttribute="trailing" constant="8" id="JH1-Hi-otx"/>
+                                                <constraint firstItem="nfx-xf-Yxd" firstAttribute="top" secondItem="cuV-Qy-ZTr" secondAttribute="top" constant="16" id="JcT-mm-sre"/>
+                                                <constraint firstItem="nfx-xf-Yxd" firstAttribute="leading" secondItem="cuV-Qy-ZTr" secondAttribute="leading" id="UL4-l9-h1U"/>
+                                                <constraint firstItem="nfx-xf-Yxd" firstAttribute="centerY" secondItem="cuV-Qy-ZTr" secondAttribute="centerY" constant="-1.75" id="Xg8-dv-Vnw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.21719980239868164" green="0.24939930438995361" blue="0.33231359720230103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="scoreLabel" destination="nfx-xf-Yxd" id="2tq-wC-nJI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="T0W-hH-MDg" id="RvE-JK-s3S"/>
+                                    <outlet property="delegate" destination="T0W-hH-MDg" id="BxL-hl-Ht6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7xG-n7-HWa" firstAttribute="leading" secondItem="Y10-zA-PhV" secondAttribute="leading" id="DLC-r1-8Eo"/>
+                            <constraint firstAttribute="trailing" secondItem="7xG-n7-HWa" secondAttribute="trailing" id="Dhv-AS-MHt"/>
+                            <constraint firstItem="7xG-n7-HWa" firstAttribute="bottom" secondItem="cdO-aY-Mul" secondAttribute="top" constant="64" id="fp2-XW-Ef2"/>
+                            <constraint firstItem="7xG-n7-HWa" firstAttribute="top" secondItem="Y10-zA-PhV" secondAttribute="top" id="xVt-0K-ghf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableview" destination="7xG-n7-HWa" id="SjI-m1-2KD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Iw-LM-8Gg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1344.375" y="70"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lYr-oi-DMy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GdL-p3-0fF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Axk-am-1tw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gzt-a9-W60"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IBW-7s-oaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68" y="71"/>
+        </scene>
+    </scenes>
+</document>
